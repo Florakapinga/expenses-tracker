@@ -40,3 +40,9 @@ public:
         return total;
     }
 };
+int main()
+{
+    ExpenseTracker tracker;
+    int choice;
+    std::string category;
+    double amount;

@@ -51,3 +51,25 @@ int main()
         std::cout << "1. Add Expense\n2. View Expenses\n3. Total Expenses\n4. Exit\n";
         std::cout << "Enter your choice: ";
         std::cin >> choice;
+        switch (choice)
+        {
+        case 1:
+            std::cout << "Enter category: ";
+            std::cin >> category;
+            std::cout << "Enter amount: ";
+            std::cin >> amount;
+            tracker.addExpense(category, amount);
+            break;
+        case 2:
+            tracker.displayExpenses();
+            break;
+        case 3:
+            std::cout << "Total Expenses: $" << tracker.totalExpenses() << "\n";
+            break;
+        case 4:
+            std::cout << "Exiting the program.\n";
+            break;
+        default:
+            std::cout << "Invalid choice. Please try again.\n";
+        }
+    } while (choice != 4);

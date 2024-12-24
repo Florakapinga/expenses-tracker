@@ -46,3 +46,8 @@ int main()
     int choice;
     std::string category;
     double amount;
+    do
+    {
+        std::cout << "1. Add Expense\n2. View Expenses\n3. Total Expenses\n4. Exit\n";
+        std::cout << "Enter your choice: ";
+        std::cin >> choice;

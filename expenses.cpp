@@ -20,3 +20,13 @@ public:
     {
         expenses.emplace_back(category, amount);
     }
+    void displayExpenses() const
+    {
+        std::cout << std::fixed << std::setprecision(2);
+        std::cout << "Expenses Summary:\n";
+        for (const auto &expense : expenses)
+        {
+            std::cout << "Category: " << expense.category
+                      << ", Amount: $" << expense.amount << "\n";
+        }
+    }

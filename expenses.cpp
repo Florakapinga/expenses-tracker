@@ -73,3 +73,5 @@ int main()
             std::cout << "Invalid choice. Please try again.\n";
         }
     } while (choice != 4);
+    return 0;
+}

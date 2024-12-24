@@ -30,3 +30,13 @@ public:
                       << ", Amount: $" << expense.amount << "\n";
         }
     }
+    double totalExpenses() const
+    {
+        double total = 0.0;
+        for (const auto &expense : expenses)
+        {
+            total += expense.amount;
+        }
+        return total;
+    }
+};
